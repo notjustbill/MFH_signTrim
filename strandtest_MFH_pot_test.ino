@@ -34,7 +34,7 @@ void setup() {
 void loop() {
 
   int potValue = analogRead(POT_PIN);
-  int speedValue = map(potValue, 0, 1023, 0, 100); //Convert from 0-1023 proportional to the number of a number of from 0 to 255
+  int speedValue = map(potValue, 0, 1023, 0, 100); //Convert from 0-1023 proportional to the number of a number of from 0 to 100
   rainbowCycle(speedValue/10);
 
 }
